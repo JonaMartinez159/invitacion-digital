@@ -3,3 +3,68 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+.invitation-card {
+    background-color: none;
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-family: 'Times New Roman', serif; /* Simulating a classic font */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5d4037; /* A warm, inviting color */
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 2px;
+    height: 100%;
+    background-color: #d1c4e9; /* Light purple line */
+  }
+  
+  .timeline-event {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .timeline-event:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline-event::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -27px; /* Adjust based on padding-left of .timeline and dot size */
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff; /* Purple dot */
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-time {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #5d4037;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-description {
+    font-size: 0.95em;
+    color: #666;
+  }

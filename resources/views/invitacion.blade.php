@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="relative">
-        <img src="{{asset('img/headerboda.jpg')}}" alt="">
+        <img src="{{asset('img/headerbodanos.jpeg')}}" alt="">
     </div>
 
     <!-- principal -->
@@ -49,31 +49,55 @@
     </div><br><br><br><br><br>
 
     <!-- programa -->
-    <div class="bg-[#98b3c8] py-8 px-8 text-center" style="font-family: 'Cinzel', serif;">
-        <img src="{{asset('img/polaroids.png')}}" alt="" class="mt-[-140px]">
+    <div class="bg-[#98b3c8] py-8 px-6 text-center" style="font-family: 'Cinzel', serif;">
+        <img src="{{asset('img/polaroids.png')}}" alt="" class="mt-[-140px] h-[220px]">
 
         <p class="text-xs text-white">Celebramos nuestra union en la cercania de las personas que mas nos quieren</p>
         <br><br><b><br>
             
         <p class="text-xl text-white font-extralight">Nuestro Programa</p><br>
 
-        <div class="w-full flex items-center justify-center">
-            <img src="{{asset('img/lugar.png')}}" alt="">
+        <div class="relative w-full">
+            <!-- Línea central -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-white"></div>
+        
+            <!-- Evento 1 -->
+            <div class="mb-5 flex justify-start">
+              <div class="w-1/2 pr-8 text-right">
+                <div class="flex justify-end">
+                  <img src="{{asset('img/lugar.png')}}" alt="" class="w-12 h-12">
+                </div>
+                <p class="text-xs text-white mt-2">7:00 PM</p>
+                <p class="text-xs text-white font-extralight">Llegada y entrada de los novios</p>
+              </div>
+              <div class="w-1/2"></div>
+            </div>
+        
+            <!-- Evento 2 -->
+            <div class="mb-5 flex justify-end">
+              <div class="w-1/2"></div>
+              <div class="w-1/2 pl-8 text-left">
+                <div class="flex justify-start">
+                  <img src="{{asset('img/copas.png')}}" alt="" class="w-12 h-12">
+                </div>
+                <p class="text-xs text-white mt-2">7:15 PM</p>
+                <p class="text-xs text-white font-extralight">Banquete, brindis y palabras de los invitados</p>
+              </div>
+            </div>
+        
+            <!-- Evento 3 -->
+            <div class="mb-5 flex justify-start">
+              <div class="w-1/2 pr-8 text-right">
+                <div class="flex justify-end">
+                  <img src="{{asset('img/pareja.png')}}" alt="" class="w-12 h-12">
+                </div>
+                <p class="text-xs text-white mt-2">7:15 PM</p>
+                <p class="text-xs text-white font-extralight">Vals de los novios con los padres</p>
+              </div>
+              <div class="w-1/2"></div>
+            </div>
         </div>
-        <p class="text-xs text-white">7:00 PM</p>
-        <p class="text-xs text-white font-extralight px-12">llegada y entrada de los novios</p><br>
-
-        <div class="w-full flex items-center justify-center">
-            <img src="{{asset('img/copas.png')}}" alt="">
-        </div>
-        <p class="text-xs text-white">7:15 PM</p>
-        <p class="text-xs text-white font-extralight px-12">Banquete, brindis y palabras de los invitados</p><br>
-
-        <div class="w-full flex items-center justify-center">
-            <img src="{{asset('img/pareja.png')}}" alt="">
-        </div>
-        <p class="text-xs text-white">7:15 PM</p>
-        <p class="text-xs text-white font-extralight px-12">Vals de los novios con los padres</p><br>
+        
     </div><br><br>
 
     <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
@@ -104,9 +128,12 @@
         <p class="font-extralight text-[10px] px-8 pb-4">DEJEMOS A LOS NIÑOS EN CASA ESTA VEZ Y DISFRUTEMOS DE LA NOCHE JUNTOS</p>
     </div><br><br>
 
-    <div class="w-full h-[300px] text-center" style="font-family: 'Cinzel', serif;">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
         <p class="font-extralight text-[12px] px-8 pb-2">ESPERAMOS CONTAR  CON SU PRESENCIA</p>
-        <p class="font-medium text-xl pb-1">MUCHAS GRACIAS</p>
+        <p class="font-medium text-xl pb-1">MUCHAS GRACIAS</p>        
     </div>
+
+    <img src="{{asset('img/bodanoscentro.jpeg')}}" alt="" class="mt-[20px]">
+
 </body>
 </html>
