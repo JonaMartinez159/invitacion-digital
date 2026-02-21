@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     @vite('resources/css/app.css')
 </head>
@@ -19,12 +21,12 @@
     </div>
 
     <!-- principal -->
-    <div style="font-family: 'Cinzel', serif;" class="w-full flex items-center justify-center flex-col mt-10 px-5 pb-12 text-center">
+    <div style="font-family: 'Cinzel', serif;" class="w-full flex items-center justify-center flex-col mt-10 px-5 pb-12 text-center" data-aos="fade-up" data-aos-delay="1000">
         <p class="text-2xl font-medium" style="color: #323B60"> ISABEL <br>& <br> JONATHAN </p><br>
 
         <p class="text-xs font-light px-12">Te invitamos a celebrar nuestra union matrimonial</p><br>
 
-        <div class="grid grid-cols-3 py-4">
+        <div class="grid grid-cols-3 py-4" data-aos="fade-up" data-aos-duration="2000">
             <div>
                 <p class="text-sm border-t-2 border-b-2 border-gray-400 px-2">SABADO</p>
             </div>
@@ -49,20 +51,20 @@
     </div><br><br><br><br><br>
 
     <!-- programa -->
-    <div class="bg-[#98b3c8] py-8 px-6 text-center" style="font-family: 'Cinzel', serif;">
-        <img src="{{asset('img/polaroids.png')}}" alt="" class="mt-[-140px] h-[220px]">
+    <div class="bg-[#98b3c8] py-8 px-6 text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-duration="2000">
+        <img src="{{asset('img/polaroids2.png')}}" alt="" class="mt-[-140px] h-[220px]">
 
         <p class="text-xs text-white">Celebramos nuestra union en la cercania de las personas que mas nos quieren</p>
         <br><br><b><br>
             
         <p class="text-xl text-white font-extralight">Nuestro Programa</p><br>
 
-        <div class="relative w-full">
+        <div class="relative w-full" data-aos="fade-up" data-aos-duration="2000">
             <!-- Línea central -->
             <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-white"></div>
         
             <!-- Evento 1 -->
-            <div class="mb-5 flex justify-start">
+            <div class="mb-5 flex justify-start" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
               <div class="w-1/2 pr-8 text-right">
                 <div class="flex justify-end">
                   <img src="{{asset('img/lugar.png')}}" alt="" class="w-12 h-12">
@@ -74,7 +76,7 @@
             </div>
         
             <!-- Evento 2 -->
-            <div class="mb-5 flex justify-end">
+            <div class="mb-5 flex justify-end" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
               <div class="w-1/2"></div>
               <div class="w-1/2 pl-8 text-left">
                 <div class="flex justify-start">
@@ -86,7 +88,7 @@
             </div>
         
             <!-- Evento 3 -->
-            <div class="mb-5 flex justify-start">
+            <div class="mb-5 flex justify-start" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
               <div class="w-1/2 pr-8 text-right">
                 <div class="flex justify-end">
                   <img src="{{asset('img/pareja.png')}}" alt="" class="w-12 h-12">
@@ -96,11 +98,23 @@
               </div>
               <div class="w-1/2"></div>
             </div>
+
+            <!-- Evento 4 -->
+            <div class="mb-5 flex justify-end" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                <div class="w-1/2"></div>
+                <div class="w-1/2 pl-8 text-left">
+                  <div class="flex justify-start">
+                    <img src="{{asset('img/copas.png')}}" alt="" class="w-12 h-12">
+                  </div>
+                  <p class="text-xs text-white mt-2">7:15 PM</p>
+                  <p class="text-xs text-white font-extralight">Se abre a pista de baile</p>
+                </div>
+              </div>
         </div>
         
     </div><br><br>
 
-    <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
         <div class="w-full flex justify-center p-4">
             <img src="{{asset('img/calendario.png')}}" width="60" alt="" class="bg-[#98b3c8] p-2 rounded-full">
         </div>
@@ -112,7 +126,7 @@
         <a href="" class="text-sm p-1 font-extralight rounded-md mt-4 bg-[#98b3c8] text-white underline">Contacto con el novio</a>
     </div><br><br>
 
-    <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
         <div class="w-full flex justify-center p-4">
             <img src="{{asset('img/regalo.png')}}" width="60" alt="" class="bg-[#98b3c8] p-2 rounded-full">
         </div>
@@ -123,17 +137,21 @@
         </div>
     </div><br><br>
 
-    <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
         <p class="font-medium text-sm pb-1">SIN NIÑOS</p>
         <p class="font-extralight text-[10px] px-8 pb-4">DEJEMOS A LOS NIÑOS EN CASA ESTA VEZ Y DISFRUTEMOS DE LA NOCHE JUNTOS</p>
     </div><br><br>
 
-    <div class="w-full text-center" style="font-family: 'Cinzel', serif;">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
         <p class="font-extralight text-[12px] px-8 pb-2">ESPERAMOS CONTAR  CON SU PRESENCIA</p>
         <p class="font-medium text-xl pb-1">MUCHAS GRACIAS</p>        
     </div>
 
     <img src="{{asset('img/bodanoscentro.jpeg')}}" alt="" class="mt-[20px]">
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
