@@ -15,10 +15,15 @@
 
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="w-screen">
+   
+  <div class="relative w-screen h-[400px] bg-cover bg-center" style="background-size: cover; background-image: url('{{ asset('img/headerbodanos.jpeg') }}');">
+    <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
+  </div>
+   <!--
     <div class="relative">
         <img src="{{asset('img/headerbodanos.jpeg')}}" alt="">
-    </div>
+    </div> -->
 
     <!-- principal -->
     <div style="font-family: 'Cinzel', serif;" class="w-full flex items-center justify-center flex-col mt-10 px-5 pb-12 text-center" data-aos="fade-up" data-aos-delay="1000">
@@ -51,8 +56,11 @@
     </div><br><br><br><br><br>
 
     <!-- programa -->
-    <div class="bg-[#98b3c8] py-8 px-6 text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-duration="2000">
-        <img src="{{asset('img/polaroids2.png')}}" alt="" class="mt-[-140px] h-[220px]">
+    <div class="w-full bg-[#98b3c8] py-8 px-6 text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-duration="2000">
+        <div class="flex w-full items-center justify-center">
+          <img src="{{asset('img/polaroids2.png')}}" alt="" class="mt-[-140px] h-[220px]">
+
+        </div>
 
         <p class="text-xs text-white">Celebramos nuestra union en la cercania de las personas que mas nos quieren</p>
         <br><br><b><br>
@@ -104,9 +112,9 @@
                 <div class="w-1/2"></div>
                 <div class="w-1/2 pl-8 text-left">
                   <div class="flex justify-start">
-                    <img src="{{asset('img/copas.png')}}" alt="" class="w-12 h-12">
+                    <img src="{{asset('img/baile.png')}}" alt="" class="w-12 h-12">
                   </div>
-                  <p class="text-xs text-white mt-2">7:15 PM</p>
+                  <p class="text-xs text-white mt-2">7:30 PM</p>
                   <p class="text-xs text-white font-extralight">Se abre a pista de baile</p>
                 </div>
               </div>
@@ -121,9 +129,9 @@
         <p class="font-medium text-sm pb-1">CONFIRMAR ASISTENCIA</p>
         <p class="font-extralight text-[10px] px-8 pb-4">AGRADECEMOS QUE CONFIRMES TU ASISTENCIA ANTES DEL 25 DE MARZO</p>
         <div class="pb-3">
-            <a href="" class="text-sm p-1 font-extralight rounded-md mt-4 bg-[#98b3c8] text-white underline">Contacto con la novia</a><br>
+            <a href="https://wa.me/5213112384139?text=Hola,%20Quiero%20confirmar%20mi%20invitacion%20a%20la%20boda" class="text-xs p-2 font-medium rounded-md mt-4 bg-[#98b3c8] text-white underline">Contacto con la novia</a><br>
         </div>
-        <a href="" class="text-sm p-1 font-extralight rounded-md mt-4 bg-[#98b3c8] text-white underline">Contacto con el novio</a>
+        <a href="https://wa.me/5213112568280?text=Hola,%20Quiero%20confirmar%20mi%20invitacion%20a%20la%20boda" class="text-xs p-2 font-medium rounded-md mt-4 bg-[#98b3c8] text-white underline">Contacto con el novio</a>
     </div><br><br>
 
     <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
@@ -132,8 +140,9 @@
         </div>
         <p class="font-medium text-sm pb-1">SUGERENCIA DE REGALOS</p>
         <p class="font-extralight text-[10px] px-8 pb-4">EL MEJOR REGALO ES TU PRESENCIA, PERO SI DESEAS TENER UN DETALLE CON NOSOTROS, TE DEJAMOS ESTAS OPCIONES:</p>
-        <div class="pb-3">
-            <a href="" class="text-sm p-1 font-extralight rounded-md mt-4 bg-[#98b3c8] text-white underline">LIVERPOOL</a><br>
+        <div class="pb-3 space-x-2 flex direction-row items-center justify-center w-full">
+            <a href="https://www.amazon.com.mx/wedding/guest-view/3I7T00SG3BTDV" target="_blank" class="text-xs p-2 font-medium rounded-md mt-4 bg-[#98b3c8] text-white underline">AMAZON</a><br>
+            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51874512" target="_blank" class="text-xs p-2 font-medium rounded-md mt-4 bg-[#98b3c8] text-white underline">LIVERPOOL</a><br>
         </div>
     </div><br><br>
 
@@ -142,12 +151,12 @@
         <p class="font-extralight text-[10px] px-8 pb-4">DEJEMOS A LOS NIÑOS EN CASA ESTA VEZ Y DISFRUTEMOS DE LA NOCHE JUNTOS</p>
     </div><br><br>
 
-    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+    <div class="w-full text-center" style="font-family: 'Cinzel', serif;" data-aos="fade-zoom-in" data-aos-delay="2000" data-aos-duration="3000">
         <p class="font-extralight text-[12px] px-8 pb-2">ESPERAMOS CONTAR  CON SU PRESENCIA</p>
         <p class="font-medium text-xl pb-1">MUCHAS GRACIAS</p>        
     </div>
 
-    <img src="{{asset('img/bodanoscentro.jpeg')}}" alt="" class="mt-[20px]">
+    <img src="{{asset('img/bodanoscentro.jpeg')}}" alt="" class="mt-[20px] w-full">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
